@@ -71,7 +71,7 @@ section>h3>span:before {
 section a {
     text-align: center;
     float: right;
-    display: inline-block;
+    display: block;
     background-color: red;
     padding: 10px 18px;
     color: #fff;
