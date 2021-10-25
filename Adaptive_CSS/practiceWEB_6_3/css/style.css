@@ -21,17 +21,17 @@
 
 /* Media queries */
 @media (min-width: 768px) {
-    .area { 
+    .container { 
         width: 750px; 
     }
 }
 @media (min-width: 992px) {
-    .area { 
+    .container { 
         width: 970px; 
     }
 }
 @media (min-width: 1200px) {
-    .area { 
+    .container { 
         width: 1170px; 
     }
 }
