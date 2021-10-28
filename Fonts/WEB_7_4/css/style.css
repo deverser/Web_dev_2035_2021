@@ -1,12 +1,11 @@
-.copy {
-    font-size: 12px;
+.lighter {
+    font-weight: lighter;
 }
 
-p {
-    font-size: 2em;
+.bolder {
+    font-weight: bolder;
 }
 
-h3 {
-    font-size: large;
+p i {
+    font-weight: bold;
 }
-
