@@ -1,0 +1,67 @@
+body {
+    background-color: #cecece;
+    padding: 32px;
+}
+
+button {
+    margin: 25px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lime;
+    padding: 15px 35px;
+}
+
+button:hover {
+    outline: 1px solid white;
+    outline-offset: -2px;
+    cursor: pointer;
+}
+
+/* Линейный градиент сверху вниз */
+.button1 {
+    background-image: linear-gradient(#76B9CC, #97cc76);
+}
+
+/* Линейный градиент сверху вниз c 3мя цветовыми границами */
+.button2 {
+    background-image: linear-gradient(#76B9CC, #CC208A,#97cc76);
+}
+
+/* Линейный градиент сверху вниз с 4мя цветовыми границами */
+.button3 {
+    background-image: linear-gradient(#76B9CC, #CC208A,#97cc76, #B34EE9);
+}
+
+.button4 {
+    background-image: linear-gradient(blue 5%, lime 30%,#97cc76 80%, #B34EE9 90%);
+}
+
+
+.button5 {
+    background-image: linear-gradient(blue 5px, lime 15px,white 30px, black 50px);
+}
+
+/* Линейный градиент с заданием угла направления в 25 градусов */
+.button6 {
+    background-image: linear-gradient(25deg, blue, lime);
+}
+
+/* Радиальный градиент с разнесенными цветовыми точками красного и желтого цветов */
+.button7 {
+    background-image: radial-gradient(red 0%, yellow 30%);
+}
+
+/* Радиальный градиент исходящий из правого верхнего угла */
+.button8 {
+    background-image: radial-gradient(at top right, red,yellow);
+}
+
+/* Радиальный градиент с параметром размера farthest-corner */
+.button9 {
+    background-image: radial-gradient(farthest-corner at 25% 50%,#f35 0%, #43e 100%);
+}
+
+/* Радиальный градиент с указанием размера в px по осям х и у */
+.button10 {
+    background-image: radial-gradient(15px 15px at 85% 25%,#f35 0%, #43e 100%);
+}
