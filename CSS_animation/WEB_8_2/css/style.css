@@ -1,0 +1,38 @@
+body {
+    background-color: #cecece;
+    padding: 32px;
+}
+
+button {
+    margin: 25px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid lime;
+    padding: 15px 35px;
+}
+
+button:hover {
+    outline: 1px solid white; /* При наведении указателя мыши на элемент рисуем рамку с заданными параметрами */
+    outline-offset: -2px;  /* Смещение между рамкой outline и границей border */
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #2563E9;
+    transition: 1s;              /* Длительность эффекта перехода 1 сек. */
+}
+
+.button1:hover {
+    background-color: #4478E9; /* При наведении указателя мыши на кнопку, цвет фона кнопки меняется на новый, указанный в классе :hover в течение 1 сек.*/
+}
+
+.button2 {
+    background-color: #2563E9;
+    transition: 1s;              /* Длительность эффекта перехода 1 сек. */
+    transition-property: background;  /* Свойство к которому будет применяться эффект перехода */
+}
+
+.button2:hover {
+    background-color: #E95AD1; /* Новое значение, которое получит свойство в результате перехода */
+    outline: none;  
+}
