@@ -32,11 +32,12 @@ button:hover {
     background-image: linear-gradient(#76B9CC, #CC208A,#97cc76, #B34EE9);
 }
 
+/* Линейный градиент из 4х цветов с точками остановки градиента для каждого из цветов в % */
 .button4 {
     background-image: linear-gradient(blue 5%, lime 30%,#97cc76 80%, #B34EE9 90%);
 }
 
-
+/* Линейный градиент из 4х цветов с точками остановки градиента для каждого из цветов в px */
 .button5 {
     background-image: linear-gradient(blue 5px, lime 15px,white 30px, black 50px);
 }
@@ -56,7 +57,7 @@ button:hover {
     background-image: radial-gradient(at top right, red,yellow);
 }
 
-/* Радиальный градиент с параметром размера farthest-corner */
+/* Радиальный градиент с параметром размера farthest-corner (к дальнему углу) */
 .button9 {
     background-image: radial-gradient(farthest-corner at 25% 50%,#f35 0%, #43e 100%);
 }
