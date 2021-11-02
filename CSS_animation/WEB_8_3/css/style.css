@@ -8,7 +8,7 @@ div {
     height: 40px;
     position: relative;
     left: 10px;
-    transition: 1s;
+    transition: 1s;  /* Задает длительность перехода */
 }
 
 .container {
@@ -17,30 +17,30 @@ div {
 }
 
 .container:hover div {
-    left: 500px;
+    left: 500px;  /* При наведении указателя мыши на контейнер происходит смещение позиции  квадратов div слева направо на 500 px */
 }
 
 .ease {
     background-color: blue;
-    transition-timing-function: ease;
+    transition-timing-function: ease; /* Эффект перехода по умолчанию с медленным началом, затем быстро и медленное завершение */
 }
 
 .linear {
     background-color: lime;
-    transition-timing-function: linear;
+    transition-timing-function: linear; /* Эффект перехода с одинаковой линейной скоростью */
 }
 
 .ease-in {
     background-color: mediumseagreen;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-in; /* Эффект перехода с медленным стартом */
 }
 
 .ease-out {
     background-color: orangered;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out; /* Эффект перехода с медленным концом */
 }
 
 .ease-in-out {
     background-color: darkviolet;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out; /* Эффект перехода с медленным стартом и концом */
 }
