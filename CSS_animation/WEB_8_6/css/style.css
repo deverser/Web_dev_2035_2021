@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    width: 200px;
+    height: 150px;
+    outline: 1px solid #000;
+    display: inline-block;
+    margin: 35px 50px;
+}
+
+.wrap>div {
+    width: 200px;
+    height: 150px;
+    background: rgba(144, 235, 242, 0.5);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    transition: transform 1s;          /* Длительность анимаций элемента 1 сек. */
+}
+
+.wrap>div>span {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.translateX:hover {
+    transform: translateX(50px);        /* При наведении курсора элемент сдвигается вправо на 50рх */
+}
+
+.translateY:hover {
+    transform: translateY(50px);        /* При наведении курсора элемент сдвигается вниз на 50рх */
+}
+
+.translate:hover {
+    transform: translate(50px, 50px);   /* При наведении курсора элемент сдвигается на 50рх по горизонтали и вертикали  */
+}
+
+.scaleX:hover {
+    transform: scaleX(-1);       /* При наведении курсора происходит разворот элемента на 180 градусов вокруг оси Y  */
+}
+
+.scaleY:hover {
+    transform: scaleY(-1);        /* При наведении курсора происходит разворот элемента на 180 градусов вокруг оси X */
+}
+
+.scaleX15:hover {
+    transform: scaleX(1.5);       /* При наведении курсора на элемент происходит масштабирование элемента на 1.5 по горизонтали */
+}
+
+.scale:hover {
+    transform: scale(1.5, 0.5);   /* При наведении курсора на элемент происходит масштабирование элемента на 1.5 по горизонтали и 0.5 по вертикали */
+}
+
+.rotate:hover {
+    transform: rotate(360deg);    /* При наведении курсора на элемент происходит его вращение на 360 градусов относительно его центра */
+}
+
+.skewX:hover {
+    transform: skewX(45deg);       /* При наведении курсора элемент наклоняется на 45 градусов по горизонтали  */
+}
+
+.skewY:hover {
+    transform: skewY(-45deg);      /* При наведении курсора элемент наклоняется на -45 градусов по вертикали */
+}
+
+.skew:hover {
+    transform: skew(-20deg, 20deg);   /* При наведении курсора на элемент происходит его поворот на 20 градусов по часовой стрелке */
+}
+
+.matrix:hover {
+    transform: matrix(1.5, 0, 0.5, 1.2, 50, 0);    /* При наведении курсора происходит наклон элемента влево и его масштабирование по осям X и Y  */
+}
