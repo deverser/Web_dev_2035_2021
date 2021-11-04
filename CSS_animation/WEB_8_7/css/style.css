@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);  /* Создаем анимацию вращения элемента на 360 градусов */
+    }
+}
+
+.wrap {
+    width: 200px;
+    height: 150px;
+    outline: 1px solid #000;
+    display: inline-block;
+    margin: 35px 50px;
+}
+
+.wrap>div {
+    width: 200px;
+    height: 150px;
+    background: rgba(144, 235, 242, 0.5);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    animation: rotate 6s linear infinite;   /* Запускается анимация rotate длительностью 6 сек. с постоянной скоростью и бесконечным повторением */
+}
+
+.wrap>div>span {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.element-1 {
+    transform-origin: 50% 50%;   /* Задание точки оси вращения элемента на расстоянии 50% от ширины и высоты элемента  */
+}
+
+.element-2 {
+    transform-origin: top left;  /* Задание точки оси вращения элемента в левом верхнем углу элемента div */
+}
+
+.element-3 {
+    transform-origin: 100% 0%;   /* Задание точки оси вращения элемента в точке Х = 100% ширины элемента и точке Y = 0% (верхний правый угол) */
+}
+
+.element-4 {
+    transform-origin: 50px 50px;  /* Задание точки оси вращения элемента в расстоянии 50рх по осям Х и Y отсчитываемых от левого верхнего угла */
+}
