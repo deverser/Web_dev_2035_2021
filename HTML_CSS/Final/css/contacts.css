@@ -28,48 +28,6 @@ body {
   text-decoration: underline;
 }
 
-.info {
-  padding-top: 62px;
-  float: left;
-  width: 300px;
-  height: 100vh;
-  background-color: #509A78;
-}
-.info__img img {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  border-radius: 100%;
-}
-.info__subtitle {
-  margin-top: 32px;
-  text-align: center;
-}
-
-.main {
-  width: 1200px;
-  float: left;
-  padding: 0 32px;
-}
-.main__title {
-  text-align: center;
-  margin: 0 184px;
-}
-.main__content {
-  margin-top: 100px;
-  width: 100%;
-  background-color: rgba(254, 254, 254, 0.5);
-}
-.main__content p {
-  padding: 10px 80px;
-  font-size: 18px;
-}
-.main::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 footer {
   clear: both;
   width: 100%;
