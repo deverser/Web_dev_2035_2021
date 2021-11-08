@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/contacts.css">
 </head>
+
 <body>
     <header>
         <nav class="menu">
@@ -19,9 +21,24 @@
             </ul>
         </nav>
     </header>
-    <main>
-
-    </main>
+    <div class="container">
+        <h1 class="main__title">Здесь вы можете связаться со мной</h1>
+        <p>Для этого пожалуйста заполните форму ниже: </p>
+        <div class="row">
+            <div class="feedback col-lg-12">
+                <form action="contacts.html" method="post">
+                    <div class="col-lg-6">
+                        <label for="firstname">Имя: </label>
+                        <input type="text" name="firstname" id="firstname" size="25">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="secondname">Фамилия: </label> 
+                        <input type="text" name="secondname" id="secondname" size="25">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <footer>
         Малаев Александр Сергеевич, 2021. Все права защищены. &copy;
     </footer>
