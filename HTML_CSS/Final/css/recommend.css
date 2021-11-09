@@ -28,6 +28,48 @@ body {
   text-decoration: underline;
 }
 
+.container {
+  width: 1200px;
+  background-color: rgba(254, 254, 254, 0.5);
+}
+
+.main__title {
+  text-align: center;
+}
+
+.book__img img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+.book__btn {
+  -webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
+          box-shadow: 0px 0px 0px 0px #3dc21b;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #44c767), to(#5cbf2a));
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 5px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.book__btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #5cbf2a), to(#44c767));
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+  color: #ffffff;
+}
+.book__btn:active {
+  position: relative;
+  top: 1px;
+}
+
 footer {
   clear: both;
   width: 100%;
