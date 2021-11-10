@@ -29,20 +29,20 @@ body {
 }
 
 .container {
-    width: 950px;
+    width: 970px;
     height: 100vh;
 }
 
 .main {
+    margin-top: 20px;
+    padding: 30px;
+    background-color:rgba(254, 254, 254, .5);
     &__title {
         text-align: center;
-        margin: 0 auto;
     }
-}
-
-.feedback {
-    form {
-        margin: 0 auto;
+    &__subheader {
+        text-align: center;
+        font-size: 18px;
     }
 }
 
