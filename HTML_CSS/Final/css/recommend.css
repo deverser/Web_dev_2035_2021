@@ -30,19 +30,24 @@ body {
 
 .container {
   width: 1200px;
-  background-color: rgba(254, 254, 254, 0.5);
 }
 
 .main__title {
   text-align: center;
 }
 
+.book {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: rgba(254, 254, 254, 0.5);
+}
 .book__img img {
   display: block;
   width: 70%;
   margin: 0 auto;
 }
 .book__btn {
+  margin-top: 15px;
   -webkit-box-shadow: 0px 0px 0px 0px #3dc21b;
           box-shadow: 0px 0px 0px 0px #3dc21b;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #44c767), to(#5cbf2a));
@@ -68,6 +73,11 @@ body {
 .book__btn:active {
   position: relative;
   top: 1px;
+}
+
+.frame_wrapper iframe {
+  display: block;
+  margin: 0 auto;
 }
 
 footer {

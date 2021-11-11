@@ -32,7 +32,7 @@ body {
 
 .container {
     width: 1200px;
-    background-color:rgba(254, 254, 254, .5);
+    
 }
 
 .main {
@@ -42,6 +42,9 @@ body {
 }
 
 .book {
+    padding: 15px;
+    margin: 15px 0;
+    background-color:rgba(254, 254, 254, .5);
     &__img {
         img {
             display: block;
@@ -50,21 +53,22 @@ body {
         }  
     }
     &__btn {
+        margin-top: 15px;
         box-shadow: 0px 0px 0px 0px #3dc21b;
-        background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+        background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
         background-color:#44c767;
         border-radius:28px;
         border:1px solid #18ab29;
-        display:inline-block;
-        cursor:pointer;
+        display: inline-block;
+        cursor: pointer;
         color:#ffffff;
-        font-family:Verdana;
-        font-size:17px;
-        padding:5px 16px;
-        text-decoration:none;
-        text-shadow:0px 1px 0px #2f6627;
+        font-family: Verdana;
+        font-size: 17px;
+        padding: 5px 16px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #2f6627;
         &:hover {
-            background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+            background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
 	        background-color:#5cbf2a;
             color:#ffffff;
         }
@@ -75,6 +79,12 @@ body {
     }
 }
 
+.frame_wrapper {
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 footer {
     clear: both;
