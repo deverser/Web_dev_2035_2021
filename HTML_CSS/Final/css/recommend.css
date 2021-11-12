@@ -37,6 +37,11 @@ body {
 }
 
 .main__title {
+  margin: 32px 0;
+  text-align: center;
+  font-weight: 700;
+}
+.main__subtitle {
   text-align: center;
 }
 
@@ -49,6 +54,12 @@ body {
   display: block;
   width: 70%;
   margin: 0 auto;
+}
+.book__descr {
+  font-weight: 300;
+}
+.book__title {
+  font-weight: 500;
 }
 .book__btn {
   margin-top: 15px;

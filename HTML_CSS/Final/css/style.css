@@ -48,6 +48,7 @@ body {
 .info__subtitle {
   margin-top: 32px;
   text-align: center;
+  font-weight: 500;
 }
 
 .main {
@@ -58,15 +59,22 @@ body {
 .main__title {
   text-align: center;
   margin: 0 184px;
+  margin-top: 32px;
+  font-weight: 700;
+}
+.main__subtitle {
+  margin-left: 20px;
+  font-weight: 500;
 }
 .main__content {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
   background-color: rgba(254, 254, 254, 0.5);
 }
 .main__content p {
   padding: 10px 80px;
   font-size: 18px;
+  font-weight: 300;
 }
 .main::after {
   content: "";
