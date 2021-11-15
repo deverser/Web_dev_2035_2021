@@ -15,18 +15,22 @@ body {
     font-size: 18px;
     text-align: center;
     background-color: #006262;
+
     &__list {
         padding-left: 0;
         margin-bottom: 0;
+
         li {
             margin: 10px 20px;
             display: inline-block;
             list-style-type: none;
         }
+
         a {
             text-decoration: none;
             color: #fefefe;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -40,14 +44,16 @@ body {
     width: 300px;
     height: 100vh;
     background-color: #509A78;
+
     &__img {
         img {
             display: block;
             margin: 0 auto;
             width: 90%;
             border-radius: 100%;
-        }   
+        }
     }
+
     &__subtitle {
         margin-top: 32px;
         text-align: center;
@@ -59,26 +65,31 @@ body {
     width: 1200px;
     float: left;
     padding: 0 32px;
+
     &__title {
         text-align: center;
         margin: 0 184px;
         margin-top: 32px;
         font-weight: 700;
     }
+
     &__subtitle {
         margin-left: 20px;
         font-weight: 500;
     }
+
     &__content {
         margin-top: 50px;
         width: 100%;
-        background-color:rgba(254, 254, 254, .5);
+        background-color: rgba(254, 254, 254, .5);
+
         p {
             padding: 10px 80px;
             font-size: 18px;
             font-weight: 300;
         }
     }
+
     &::after {
         content: "";
         display: block;
