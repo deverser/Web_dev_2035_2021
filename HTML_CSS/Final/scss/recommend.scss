@@ -105,9 +105,26 @@ footer {
     clear: both;
     width: 100%;
     height: 65px;
-    text-align: right;
-    color: #fefefe;
-    padding-top: 15px;
-    padding-right: 10px;
+    padding: 15px 10px;
     background-color: #006262;
+    .social_links {
+        float: left;
+        a {
+            display: inline-block;
+            margin: 4px 30px; 
+            text-decoration: none;
+            color: #fefefe;
+            &:hover {
+                color:rgba(254, 254, 254, .5)
+            }
+        }
+        span {
+            font-size: 26px;
+        }
+    }
+    .copyright {
+        float: right;
+        text-align: right;
+        color: #fefefe;
+    }
 }
