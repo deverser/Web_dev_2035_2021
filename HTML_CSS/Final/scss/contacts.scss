@@ -134,3 +134,28 @@ footer {
         color: #fefefe;
     }
 }
+
+
+@media screen and (max-width: 767px) {
+    .main__title {
+        font-size: 25px;
+    }
+
+
+    footer {
+        height: 85px;
+        .social_links {
+            margin: 0 auto;
+            float:none
+        
+        }
+
+        .social_links a {
+            margin: 4px 75px;
+        }
+        .copyright {
+            float: none;
+            text-align: center;
+        }
+    }
+}
