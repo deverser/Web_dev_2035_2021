@@ -42,7 +42,7 @@ body {
     padding-top: 62px;
     float: left;
     width: 300px;
-    height: 129vh;
+    height: 94vh;
     background-color: #509A78;
 
     &__img {
@@ -100,6 +100,7 @@ body {
     width: 1200px;
     float: left;
     padding: 0 32px;
+    margin: 0 51px;
 
     &__title {
         text-align: center;
@@ -129,6 +130,30 @@ body {
         content: "";
         display: block;
         clear: both;
+    }
+}
+
+.ad_show {
+    padding: 62px 20px;
+    float: right;
+    width: 300px;
+    height: 94vh;
+    background-color: rgba(254, 254, 254, .5);
+    &__text {
+        text-align: center;
+        font-size: 20px;
+        a {
+            display: block;
+            margin: 4px 30px; 
+            text-decoration: none;
+            color: #3a36fa;
+            &:hover {
+                color:#006262
+            }
+        }
+        span {
+            font-size: 68px;
+        }
     }
 }
 
@@ -163,6 +188,21 @@ footer {
 @media screen and (max-width: 1499px) {
     .main {
         width: 895px;
+        margin: 0;
+    }
+
+    .info {
+        height: 134vh;
+    }
+
+    .ad_show {
+        float: none;
+        clear: both;
+        margin: 20px auto;
+        padding: 52px 20px;
+        height: 227px;
+        width: 501px;
+        background-color: rgba(254, 254, 254, .5);
     }
 }
 

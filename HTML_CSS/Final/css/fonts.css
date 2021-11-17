@@ -67,3 +67,7 @@
 .icon-github:before {
     content: "\eab0";
 }
+
+.icon-mail-envelope-closed:before {
+    content: "\e900";
+  }
