@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.5</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let beforeArr = [], afterArr = [];
+
+            let i = 0, j = 0;
+
+            do {
+                beforeArr.push(++i);
+                afterArr.push(j++);
+            } while (j < 5);
+
+            document.write(beforeArr + "<br>");
+            document.write(afterArr + "<br>");
+
+            /*
+                В массив beforeArr будут добавлены числа 1,2,3,4,5, потому что используется 
+                префиксный инкремент, т.е. сначала происходит увеличение числа на 1, а затем
+                уже производится запись нового числа в переменную i. 
+                B массиве afterArr всё будет происходить наоборот, потому что к переменной j 
+                применяется постфиксный инкремент, запись чисел в массив начнется с нуля: 0,1,2,3,4
+            */
+        }
+    </script>
+</body>
+</html>
