@@ -30,8 +30,8 @@
             }
 
             function processingForm() {
-                let oldW = document.getElementById("oldW").value;
-                let coefficientW = document.getElementById("coefficientW").value;
+                let oldW = parseInt(document.getElementById("oldW").value, 10);
+                let coefficientW = parseFloat(document.getElementById("coefficientW").value);
                 Wages(oldW, coefficientW);
             }
         }
