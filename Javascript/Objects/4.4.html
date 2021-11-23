@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4.4 Сортировка Массива</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let arr = ['Книги', 'Фильмы', 'Видео', 'Контакты', 'Поисковик', 1, 5, 3, 2];
+
+            sortAndJoin = (unsortedArr) => {
+                let tmpArr = [];
+                for(let i = 0; i < unsortedArr.length; i++) {
+                    if (unsortedArr[i] != undefined) {
+                        tmpArr.push(unsortedArr[i]);
+                    }
+                }
+                return tmpArr.sort().join('|');
+            }
+
+            document.write(sortAndJoin(arr));
+        }
+    </script>
+</body>
+</html>
