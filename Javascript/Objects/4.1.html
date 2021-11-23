@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4.1. Вывод массива</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let products = ['Блины', 'Квас', 'Пельмени', 'Икра'];
+
+            function printProduct(arr) {
+                let tmp = '';
+                for(let i = 0; i < arr.length; i++)
+                {
+                    tmp = tmp + arr[i] + '<br>';
+                }
+                document.write(tmp);
+            }
+
+            printProduct(products);
+        }
+    </script>
+</body>
+</html>
