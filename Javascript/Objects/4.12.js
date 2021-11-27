@@ -1,3 +1,5 @@
+'use strict';
+
 let name = 'Александр';
 let getIndexOfChar = (str, char) => str.indexOf(char);
 

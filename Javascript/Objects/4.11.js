@@ -1,3 +1,5 @@
+'use strict';
+
 let name = 'Александр';
 let getChar = (str, index) => str.charAt(index);
 

@@ -1,3 +1,5 @@
+'use strict';
+
 let eMailAddress = 'stanislav_sivin@mail.ru';
 
 let getSubstring = (str, start, end) => {

@@ -1,3 +1,5 @@
+'use strict';
+
 let person = {
     name: '',
     surname : '',
