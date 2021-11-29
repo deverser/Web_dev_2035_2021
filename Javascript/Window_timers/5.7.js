@@ -4,7 +4,7 @@ function getDateProperties(milliseconds) {
     let date = new Date(milliseconds);
     let result = {};
 
-    result.day = date.getDay();
+    result.day = date.getDate();
     result.month = date.getMonth()+1;
     result.year = date.getFullYear();
     result.hour = date.getHours();
