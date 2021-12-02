@@ -13,8 +13,22 @@
 
             let names = ['login', 'password', 'domain'];
             let values = ['stanislav', 'pass', 'localhost'];
-             
+            for(let i = 0; i < names.length; i++) {
+                document.cookie = encodeURIComponent(names[i]) + '=' + encodeURIComponent(values[i]) + "; ";
+            }
             console.log(document.cookie);
+
+            const getCookies = () => {
+                let myCookies = [];
+                let cookies = document.cookie.split('; ');
+                cookies.forEach((cookie) => {
+                    let tmpCookie = cookie.split('=');
+                    myCookies.push({ name: tmpCookie[0], value: tmpCookie[1]});
+                });
+                return myCookies;
+            }
+            console.log(getCookies());
+
         }
     </script>
 </body>
