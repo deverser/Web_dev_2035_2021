@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 7.3 Основы работы с библиотекой js-cookie</title>
+</head>
+<body onload="getCookies()">
+    <div>
+        <!-- Форма принимает логин и пароль и обрабатывает их методом login() -->
+        <label>
+            Логин: <br>
+            <input type="text" placeholder="Введите логин" id="login">
+        </label><br>
+        <label>
+            Пароль: <br>
+            <input type="text" placeholder="Введите пароль" id="password">
+        </label><br>
+        <button class="logIn" type="button" onclick="login()">Войти</button>
+    </div>
+    <!--Параграф с классом saveCookie будет получать строку имя=значение из сохраненных кук-->
+    <p class="saveCookie"></p>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.0/dist/js.cookie.min.js"></script>
+    <!-- Внешний скрипт script.js в котором будут реализованы функции getCookies() и login() -->
+    <script src="js/script.js"></script>
+</body>
+</html>
