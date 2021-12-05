@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8.2 Доступ к атрибутам объектов</title>
+</head>
+<body>
+    <form action="http://www..com" method="post" name="order">
+        <label>Имя: <br><input type="text" name="Fname" /></label><br>
+        <label>Фамилия: <br><input type="text" name="Lname"></label><br>
+        <label>Email: <br><input type="text" name="Email" /></label><br>
+        <button id="sendForm">Отправить</button>
+    </form>
+    <p class="valueOfEmail"></p>
+    <script defer>
+        {
+            "use strict";
+            function display(event) {
+                //1. Прервать передачу формы
+                event.preventDefault();
+                //2. Получить текст с поля Email и вывести его в параграф .valueOfEmail
+                //Структура вывода "Значение: введенные данные"
+                let email = document.forms.order.Email.value;
+                if (email) {
+                    document.getElementsByClassName('valueOfEmail')[0].innerText = 'Email: ' + email;
+                } else {
+                    document.getElementsByClassName('valueOfEmail')[0].innerText = '';
+                }
+                
+            }
+            document.getElementById('sendForm').addEventListener('click', display);
+        }
+    </script>
+</body>
+
+</html>
