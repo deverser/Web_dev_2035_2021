@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>8.3 Динамическое изменение значений элементов списка</title>
+    <style>
+        .typeOfVehicles label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form name="cars" action="http://www.jimkeogh.com" method="post"><select name="OptionList" size="5">
+            <option value=1>Classic</option>
+            <option value=2>Police Cruiser</option>
+        </select>
+        <div class="typeOfVehicles">
+            <label><input type="radio" name="vehicles" checked="true" value=1 onclick="ResetOptionList(this.value);">
+                Motorcycles</label>
+            <label><input type="radio" name="vehicles" value=2 onclick="ResetOptionList(this.value);">Cars</label>
+        </div>
+        <input name="Submit" value="Submit" type="submit" />
+        <input name="Reset" value="Reset" type="reset" />
+    </form>
+    <script>
+        {
+            "use strict";
+            function buildOptions(objData, root) {
+                for (item of objData) {
+                    //Создать виртуальный dom-элемент option. Подсказка document.createElement
+                    //Указать в атрибуте value Значение из объекта objData (item.value, item.name)
+                    //Указать текстовое значение для option. Подсказка option.innerText
+                    //добавить созданный и настроенный элемент в root. Подсказка root.appendChild
+                }
+            } function ResetOptionList(ElementValue) {
+                //Получаем доступ к форме
+                let cars = document.forms.cars;
+                //Объект содержащий как машины, так и мотоциклы
+                let listCars = {
+                    moto: {
+                        0: {
+                            name: "Classic",
+                            value: 1
+                        },
+                        1: {
+                            name: "Police Cruiser",
+                            value: 2
+                        },
+                        2: {
+                            name: "Harley Davidson",
+                            value: 3
+                        },
+                    },
+                    cars: {
+                        0: {
+                            name: "Ford",
+                            value: 1
+                        },
+                        1: {
+                            name: "Chevy",
+                            value: 2
+                        }
+                    }
+                }
+                //Аналогично примеру проверяем значение в value
+                if (ElementValue == 1) {
+                    //Убираем созданные ранее option из select
+                    cars.OptionList.innerHTML = "";
+                    //Запускаем на выполнение построение option
+                    //Передаем раздел moto (т.к. мотоциклы отображаем) и select
+                    buildOptions(listCars.moto, cars.OptionList);
+                }
+                if (ElementValue == 2) {
+                    //Убираем созданные ранее option из select
+                    cars.OptionList.innerHTML = "";
+                    //Передаем раздел cars (т.к. мышины отображаем) и select
+                    buildOptions(listCars.cars, cars.OptionList);
+                }
+            }
+        }
+    </script>
+</body>
+</html
