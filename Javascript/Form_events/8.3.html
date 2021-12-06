@@ -28,10 +28,14 @@
             "use strict";
             function buildOptions(objData, root) {
                 for (item of objData) {
-                    //Создать виртуальный dom-элемент option. Подсказка document.createElement
-                    //Указать в атрибуте value Значение из объекта objData (item.value, item.name)
-                    //Указать текстовое значение для option. Подсказка option.innerText
+                    //Создать виртуальный dom-элемент option.
+                    let option = document.createElement('option');
+                    //Указать в атрибуте value Значение из объекта objData
+                    option.value = objData[item].value;
+                    //Указать текстовое значение для option.
+                    option.innerText = objData[item].name;
                     //добавить созданный и настроенный элемент в root. Подсказка root.appendChild
+                    root.appendChild(option);
                 }
             } function ResetOptionList(ElementValue) {
                 //Получаем доступ к форме
@@ -74,7 +78,7 @@
                 if (ElementValue == 2) {
                     //Убираем созданные ранее option из select
                     cars.OptionList.innerHTML = "";
-                    //Передаем раздел cars (т.к. мышины отображаем) и select
+                    //Передаем раздел cars (т.к. машины отображаем) и select
                     buildOptions(listCars.cars, cars.OptionList);
                 }
             }
