@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8.2 Доступ к атрибутам объектов</title>
 </head>
 <body>
@@ -9,10 +11,10 @@
         <label>Имя: <br><input type="text" name="Fname" /></label><br>
         <label>Фамилия: <br><input type="text" name="Lname"></label><br>
         <label>Email: <br><input type="text" name="Email" /></label><br>
-        <button id="sendForm">Отправить</button>
+        <button type="button" id="sendForm">Отправить</button>
     </form>
     <p class="valueOfEmail"></p>
-    <script defer>
+    <script>
         {
             "use strict";
             function display(event) {
@@ -32,5 +34,4 @@
         }
     </script>
 </body>
-
 </html>
