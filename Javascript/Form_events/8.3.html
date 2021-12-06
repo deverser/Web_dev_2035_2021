@@ -27,7 +27,7 @@
         {
             "use strict";
             function buildOptions(objData, root) {
-                for (item of objData) {
+                for (let item in objData) {
                     //Создать виртуальный dom-элемент option.
                     let option = document.createElement('option');
                     //Указать в атрибуте value Значение из объекта objData
