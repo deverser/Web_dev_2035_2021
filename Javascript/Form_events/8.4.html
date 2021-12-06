@@ -42,8 +42,11 @@
                     document.forms[0].Email.style.fontSize = '18px';
                   	//Изменить внешнюю границу(outline) у input[name="Email"] (задать 1px solid red)
                   	document.forms[0].Email.style.outline = '1px solid red';
+                    document.querySelector('.checkEmail').innerText = 'Проверьте правильность введенного E-mail адреса!';
+                    document.querySelector('.checkEmail').style.color = 'red';
                 } else {
                     document.forms[0].Email.style = '';
+                    document.querySelector('.checkEmail').innerText = '';
                 }
             }
         }
