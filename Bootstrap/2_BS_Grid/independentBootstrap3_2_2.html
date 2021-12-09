@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
+        body {
+            padding: 0;
+        }
         .row {
             background-color: #FFBC75;
+            outline: 1px solid #fff;
+        }
+        .row > .col-md-12 {
+            outline: 1px solid #fff;
         }
         .col-md-2 {
             background-color: #FC7F0A;
+            outline: 1px solid #fff;
         }
         div {
-            outline: 1px white solid;
             text-align: center;
         }
     </style>
@@ -23,10 +30,31 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-md-offset-12">Основной</div>
-            <div class="col-md-2 col-md-push-10">.col-md-2</div>
-            <div class="col-md-2 col-md-offset-3">.col-md-2</div>
-            <div class="col-md-2 col-md-offset-12 col-md-pull-10">.col-md-2</div>    
+            <div class="col-md-12">Основной 1
+                <div class="col-md-12"></div>
+                <div class="col-md-2">col-md-2</div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2">col-md-2</div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2">col-md-2</div>
+                <div class="col-md-12">.</div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"> Основной 2
+                    <div class="col-md-12">
+                        <div class="col-md-10"></div>
+                        <div class="col-md-2">col-md-2</div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="col-md-2">col-md-2</div>
+                            <div class="col-md-2">col-md-2</div>
+                            <div class="col-md-8"></div>
+                            <div class="col-md-12">.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
