@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 0;
+        }
+        .row {
+            background-color: #FFBC75;
+            outline: 1px solid #fff;
+        }
+        .row > .col-md-12 {
+            outline: 0px;
+        }
+        .col-md-2 {
+            background-color: #FC7F0A;
+            outline: 1px solid #fff;
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+    <title>Bootstrap 4 Module grid</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">Основной 1</div>
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-2 offset-md-3">col-md-2</div>
+            <div class="col-md-2 offset-md-3">col-md-2</div>
+            <div class="col-md-12">.</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Основной 2</div>
+            <div class="col-md-2 offset-md-10">col-md-2</div>
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-8"></div>
+            <div class="col-md-12">.</div>
+        </div>
+    </div>
+</body>
+</html>
