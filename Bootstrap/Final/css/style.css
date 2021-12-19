@@ -1,0 +1,67 @@
+.navbar {
+  height: 100px;
+  background-color: #008daa;
+  -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.navbar__container {
+  width: 1170px;
+}
+.navbar__link {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #d4d0c8;
+}
+.navbar__link_social {
+  margin: 0 24px;
+  font-size: 29px;
+  color: #d4d0c8;
+}
+.navbar__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -14px;
+  height: 30px;
+}
+
+.main .container {
+  max-width: 1160px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.menu__item {
+  margin: 16px;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #06bac5;
+  text-transform: uppercase;
+}
+.menu__item:first-child {
+  list-style-type: none;
+}
+
+.main__header {
+  font-family: Philosopher;
+  font-size: 55px;
+  line-height: 72px;
+  font-weight: 400;
+  color: #005c7b;
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
