@@ -3,7 +3,8 @@
     background-color: #008daa;
     box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.4);
     &__container {
-        width: 1170px;
+        padding: 0;
+        width: 1179px;
     }
     &__link {
         font-family: Roboto;
@@ -27,12 +28,13 @@
 }
 
 .main .container {
-    max-width: 1160px;
+    max-width: 1179px;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
+    margin-top: 4px;
     &__item {
         margin: 16px;
         font-family: Roboto;
@@ -49,11 +51,48 @@
 
 .main {
     &__header {
-        font-family: Philosopher;
+        margin-top: 49px;
+        font-family: "Philosopher";
         font-size: 55px;
-        line-height: 72px;
+        line-height: 114px;
         font-weight: 400;
         color: #005c7b;
         text-align: right;
+    }
+    &__pic {
+        margin-left: -116px;
+        margin-top: -152px;
+        justify-content: flex-start;
+        img {
+            display: block;
+            width: 134%;
+        }
+        
+    }
+    &__info {
+        justify-content: flex-end;
+    }
+    &__subheader {
+        margin-top: 71px;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #005c7b;
+    }
+    &__button {
+        display: block;
+        width: 315px;
+        height: 60px;
+        padding: 16px 20px;
+        margin: 0 auto;
+        border-radius: 60px;
+        font-family: Roboto;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #eeeeed;
+        background-color: #005c7b;
     }
 }

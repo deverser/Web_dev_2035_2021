@@ -5,7 +5,8 @@
           box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 .navbar__container {
-  width: 1170px;
+  padding: 0;
+  width: 1179px;
 }
 .navbar__link {
   font-family: Roboto;
@@ -31,7 +32,7 @@
 }
 
 .main .container {
-  max-width: 1160px;
+  max-width: 1179px;
 }
 
 .menu {
@@ -41,6 +42,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 4px;
 }
 .menu__item {
   margin: 16px;
@@ -56,12 +58,52 @@
 }
 
 .main__header {
-  font-family: Philosopher;
+  margin-top: 49px;
+  font-family: "Philosopher";
   font-size: 55px;
-  line-height: 72px;
+  line-height: 114px;
   font-weight: 400;
   color: #005c7b;
   text-align: right;
+}
+.main__pic {
+  margin-left: -116px;
+  margin-top: -152px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main__pic img {
+  display: block;
+  width: 134%;
+}
+.main__info {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.main__subheader {
+  margin-top: 71px;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #005c7b;
+}
+.main__button {
+  display: block;
+  width: 315px;
+  height: 60px;
+  padding: 16px 20px;
+  margin: 0 auto;
+  border-radius: 60px;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #eeeeed;
+  background-color: #005c7b;
 }
 
 /*# sourceMappingURL=style.css.map */
