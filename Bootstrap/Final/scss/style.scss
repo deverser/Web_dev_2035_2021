@@ -17,6 +17,12 @@
             margin: 0 24px;
             font-size: 29px;
             color: #d4d0c8;
+            &:hover {
+                color: #eeeeed;
+            }
+        }
+        &:hover {
+            color: #eeeeed;
         }
     }
     &__social {
@@ -43,8 +49,23 @@
         font-weight: 400;
         color: #06bac5;
         text-transform: uppercase;
-        &:first-child {
-            list-style-type: none;
+        list-style-type: none;
+        &::before {
+            display: inline-block;
+            position: relative;
+            content: '';
+            left: -16px;
+            top: -3px;
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            background-color: #06bac5;
+        }
+        &:first-child::before {
+            display: none;
+        }
+        &:hover {
+            color: #eb477c;
         }
     }
 }
@@ -70,7 +91,9 @@
         
     }
     &__info {
-        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
     &__subheader {
         margin-top: 71px;
@@ -78,6 +101,7 @@
         font-size: 24px;
         line-height: 24px;
         font-weight: 500;
+        text-align: right;
         color: #005c7b;
     }
     &__button {
@@ -85,7 +109,7 @@
         width: 315px;
         height: 60px;
         padding: 16px 20px;
-        margin: 0 auto;
+        margin-top: 58px;
         border-radius: 60px;
         font-family: Roboto;
         font-size: 30px;
@@ -94,5 +118,9 @@
         text-decoration: none;
         color: #eeeeed;
         background-color: #005c7b;
+        &:hover {
+            background-color: #eb477c;
+            color: #d4d0c8;
+        }
     }
 }
