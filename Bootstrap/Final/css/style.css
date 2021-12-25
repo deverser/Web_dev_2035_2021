@@ -37,7 +37,7 @@
   height: 30px;
 }
 
-.main .container {
+main .container {
   max-width: 1179px;
 }
 
@@ -137,6 +137,80 @@
 .main__button:hover {
   background-color: #eb477c;
   color: #d4d0c8;
+}
+
+.header {
+  margin-top: 137px;
+  font-family: "Philosopher";
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #005c7b;
+}
+
+.about {
+  height: 1080px;
+}
+.about__text {
+  margin-top: 115px;
+  margin-bottom: 122px;
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #005c7b;
+  text-align: center;
+}
+.about__img {
+  display: block;
+  margin: 0 auto;
+}
+.about__subtitle {
+  margin-top: 45px;
+  font-family: "Philosopher";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #005c7b;
+  text-align: center;
+}
+.about__info {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 24px;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #008daa;
+  text-align: center;
+}
+
+.advantages {
+  height: 1080px;
+  border: 3px solid #eeeeed;
+}
+.advantages__list {
+  margin: 0 auto;
+  width: 745px;
+}
+.advantages__list ul {
+  margin-top: 76px;
+  margin-left: 29px;
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 400;
+  color: #005c7b;
+  list-style-type: none;
+}
+.advantages__list ul li {
+  margin-bottom: 68px;
+}
+.advantages__list ul li svg.svg-inline--fa {
+  margin-right: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */

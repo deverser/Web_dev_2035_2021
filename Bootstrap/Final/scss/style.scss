@@ -1,3 +1,4 @@
+
 .navbar {
     height: 100px;
     background-color: #008daa;
@@ -33,7 +34,7 @@
     }
 }
 
-.main .container {
+main .container {
     max-width: 1179px;
 }
 
@@ -121,6 +122,80 @@
         &:hover {
             background-color: #eb477c;
             color: #d4d0c8;
+        }
+    }
+}
+
+.header {
+    margin-top: 137px;
+    font-family: "Philosopher";
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #005c7b;
+}
+
+.about {
+    height: 1080px;
+    &__text {
+        margin-top: 115px;
+        margin-bottom: 122px;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #005c7b;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__subtitle {
+        margin-top: 45px;
+        font-family: "Philosopher";
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #005c7b;
+        text-align: center;
+    }
+    &__info {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 24px;
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #008daa;
+        text-align: center;
+    }
+}
+
+.advantages {
+    height: 1080px;
+    border: 3px solid #eeeeed;
+    &__list {
+        margin: 0 auto;
+        width: 745px;
+        ul {
+            margin-top: 76px;
+            margin-left: 29px;
+            font-family: Roboto;
+            font-size: 30px;
+            line-height: 48px;
+            font-weight: 400;
+            color: #005c7b;
+            list-style-type: none;
+            li {
+                margin-bottom: 68px;
+                svg.svg-inline--fa {
+                    margin-right: 45px;
+                }
+            }
         }
     }
 }
