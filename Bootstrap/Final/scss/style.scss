@@ -275,3 +275,55 @@ main .container {
     }
 
 }
+
+.contacts {
+    height: 1080px;
+    &__main {
+        margin-top: 177px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        display: block;
+        width: 251px;
+        height: 85px;
+    }
+    &__text {
+        font-family: Roboto;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        color: #005c7d;
+    }
+    &__link {
+        display: block;
+        font-family: Roboto;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: #008daa;
+    }
+    &__subheader {
+        margin-top: 143px;
+        font-family: Roboto;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        color: #005c7d;
+        text-align: center;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 63px;
+        width: 570px;
+        a {
+            display: block;
+            font-size: 60px;
+            color: #008DAA;
+        }
+    }
+}
