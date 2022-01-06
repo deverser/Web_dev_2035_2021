@@ -347,3 +347,29 @@ main .container {
   font-size: 60px;
   color: #008DAA;
 }
+
+footer {
+  width: 100%;
+  height: 177px;
+  background-color: #005c7b;
+}
+footer .content {
+  width: 1170px;
+  margin: 0 auto;
+}
+footer .content__text {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #eeeeed;
+}
+footer .content__link {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #eeeeed;
+}
+
+/*# sourceMappingURL=style.css.map */
