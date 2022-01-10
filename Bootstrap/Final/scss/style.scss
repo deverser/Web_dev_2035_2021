@@ -239,6 +239,10 @@ main .container {
     }
 }
 
+.accordion-button::after {
+    background-image: url('../img/arrow_drop_down.svg')
+}
+
 .feedback {
     .carousel {
         margin-top: 119px;
