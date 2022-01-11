@@ -1,15 +1,16 @@
 "use strict";
 
 var myCollapsible = document.getElementById('accordionQues');
-console.log(myCollapsible);
-myCollapsible.addEventListener('hidden.bs.collapse', function (e) {
-    console.log(e);
+myCollapsible.addEventListener('shown.bs.collapse', function (e) {
+    console.log('Открыт');
+    console.log(e.target.parentNode);
 });
 
-myCollapsible.addEventListener('shown.bs.collapse', function (e) {
-    console.log(e);
+myCollapsible.addEventListener('hidden.bs.collapse', function (e) {
+    console.log('Закрыт');
+    console.log(e.target.parentNode);
 });
 
 function change(e) {
-    console.log(e.target.parentNode);
+    console.log(e);
 }
