@@ -243,6 +243,15 @@ main .container {
     background-image: none;
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
 .feedback {
     .carousel {
         margin-top: 119px;
