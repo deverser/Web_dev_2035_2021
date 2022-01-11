@@ -2,15 +2,13 @@
 
 var myCollapsible = document.getElementById('accordionQues');
 myCollapsible.addEventListener('shown.bs.collapse', function (e) {
-    console.log('Открыт');
-    console.log(e.target.parentNode);
+    let accElem = e.target.parentNode;
+    accElem.querySelector('.accordion-button > .questions__item > i').classList.toggle("fa-caret-up");
+    accElem.querySelector('.accordion-button > .questions__item > i').classList.toggle("fa-caret-down");
 });
 
 myCollapsible.addEventListener('hidden.bs.collapse', function (e) {
-    console.log('Закрыт');
-    console.log(e.target.parentNode);
+    let accElem = e.target.parentNode;
+    accElem.querySelector('.accordion-button > .questions__item > i').classList.toggle("fa-caret-down");
+    accElem.querySelector('.accordion-button > .questions__item > i').classList.toggle("fa-caret-up");
 });
-
-function change(e) {
-    console.log(e);
-}

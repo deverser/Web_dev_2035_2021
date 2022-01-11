@@ -239,8 +239,8 @@ main .container {
     }
 }
 
-.accordion-button::after {
-    background-image: url('../img/arrow_drop_down.svg')
+.accordion-button::after, .accordion-button::before, .accordion-button:not(.collapsed)::after {
+    background-image: none;
 }
 
 .feedback {

@@ -252,8 +252,8 @@ main .container {
   color: #005c7b;
 }
 
-.accordion-button::after {
-  background-image: url("../img/arrow_drop_down.svg");
+.accordion-button::after, .accordion-button::before, .accordion-button:not(.collapsed)::after {
+  background-image: none;
 }
 
 .feedback .carousel {
@@ -376,5 +376,3 @@ footer .content__link {
   text-decoration: underline;
   color: #eeeeed;
 }
-
-/*# sourceMappingURL=style.css.map */
