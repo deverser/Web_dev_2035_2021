@@ -300,6 +300,12 @@ main .container {
   color: #008daa;
 }
 
+.fa-chevron-circle-right:before, .fa-circle-chevron-right:before, .fa-chevron-circle-left:before, .fa-circle-chevron-left:before {
+  content: "\f138";
+  color: blue;
+  font-size: 35px;
+}
+
 .contacts {
   height: 1080px;
 }
@@ -386,3 +392,5 @@ footer .content__link {
   text-decoration: underline;
   color: #eeeeed;
 }
+
+/*# sourceMappingURL=style.css.map */
