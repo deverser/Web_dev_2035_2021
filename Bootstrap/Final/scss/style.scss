@@ -289,11 +289,30 @@ main .container {
 
 }
 
-.fa-chevron-circle-right:before, .fa-circle-chevron-right:before, .fa-chevron-circle-left:before, .fa-circle-chevron-left:before {
-    content: "\f138";
-    color: blue;
-    font-size: 35px;
-}
+.icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #D4D0C8;
+  }
+  
+
+  .icon-circle-left, .icon-circle-right {
+    display: inline-block;
+    font-size: 32px;
+    color: #D4D0C8;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+      align-items: flex-start;
+      top: 62px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-image: none;
+  }
 
 .contacts {
     height: 1080px;
