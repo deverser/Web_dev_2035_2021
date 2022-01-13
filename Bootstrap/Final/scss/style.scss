@@ -236,6 +236,9 @@ main .container {
         text-decoration: underline;
         text-align: center;
         color: #005c7b;
+        &:hover {
+            color: #eb477b;
+        }
     }
 }
 
@@ -342,6 +345,9 @@ main .container {
         font-weight: 500;
         text-decoration: underline;
         color: #008daa;
+        &:hover {
+            color: #eb477c;
+        }
     }
     &__subheader {
         margin-top: 143px;
@@ -362,6 +368,9 @@ main .container {
             display: block;
             font-size: 60px;
             color: #008DAA;
+            &:hover {
+                color: #eb477b;
+            }
         }
     }
 }
@@ -387,6 +396,9 @@ footer {
             font-weight: 400;
             text-decoration: underline;
             color: #eeeeed;
+            &:hover {
+                color: #d4d0c8;
+            }
         }
     }
 }
