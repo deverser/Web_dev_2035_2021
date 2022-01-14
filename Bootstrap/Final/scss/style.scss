@@ -8,9 +8,9 @@
         width: 1179px;
     }
     &__link {
+        margin-left: 3px;
         font-family: Roboto;
         font-size: 24px;
-        line-height: 24px;
         font-weight: 400;
         text-decoration: underline;
         color: #d4d0c8;
@@ -35,18 +35,17 @@
 }
 
 main .container {
-    max-width: 1179px;
+    max-width: 1195px;
 }
 
 .menu {
     display: flex;
     justify-content: flex-end;
-    margin-top: 4px;
     &__item {
-        margin: 16px;
+        margin: 14px;
+        margin-top: 17px;
         font-family: Roboto;
         font-size: 18px;
-        line-height: 24px;
         font-weight: 400;
         color: #06bac5;
         text-transform: uppercase;
@@ -73,10 +72,10 @@ main .container {
 
 .main {
     &__header {
-        margin-top: 49px;
+        margin-top: 50px;
         font-family: "Philosopher";
         font-size: 55px;
-        line-height: 114px;
+        line-height: 112px;
         font-weight: 400;
         color: #005c7b;
         text-align: right;
@@ -100,7 +99,7 @@ main .container {
         margin-top: 71px;
         font-family: Roboto;
         font-size: 24px;
-        line-height: 24px;
+        line-height: 32px;
         font-weight: 500;
         text-align: right;
         color: #005c7b;
@@ -110,7 +109,7 @@ main .container {
         width: 315px;
         height: 60px;
         padding: 16px 20px;
-        margin-top: 58px;
+        margin-top: 38px;
         border-radius: 60px;
         font-family: Roboto;
         font-size: 30px;
@@ -127,10 +126,9 @@ main .container {
 }
 
 .header {
-    margin-top: 137px;
+    margin-top: 167px;
     font-family: "Philosopher";
     font-size: 60px;
-    line-height: 60px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -138,26 +136,26 @@ main .container {
 }
 
 .about {
-    height: 1080px;
+    height: 914px;
     &__text {
-        margin-top: 115px;
-        margin-bottom: 122px;
+        margin-top: 93px;
+        margin-bottom: 110px;
         font-family: Roboto;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 29px;
         font-weight: 400;
         color: #005c7b;
         text-align: center;
     }
     &__img {
+        height: 100px;
         display: block;
         margin: 0 auto;
     }
     &__subtitle {
-        margin-top: 45px;
+        margin-top: 31px;
         font-family: "Philosopher";
         font-size: 30px;
-        line-height: 30px;
         font-weight: 400;
         color: #005c7b;
         text-align: center;
@@ -165,7 +163,7 @@ main .container {
     &__info {
         width: 280px;
         margin: 0 auto;
-        margin-top: 24px;
+        margin-top: 9px;
         font-family: Roboto;
         font-size: 18px;
         line-height: 30px;
@@ -176,10 +174,11 @@ main .container {
 }
 
 .advantages {
-    height: 1080px;
+    height: 1085px;
     border: 3px solid #eeeeed;
     &__list {
         margin: 0 auto;
+        margin-top: -10px;
         width: 745px;
         ul {
             margin-top: 76px;
@@ -191,7 +190,11 @@ main .container {
             color: #005c7b;
             list-style-type: none;
             li {
-                margin-bottom: 68px;
+                margin-bottom: 45px;
+                i {
+                    margin-right: 42px;
+                    margin-left: 6px;
+                }
                 svg.svg-inline--fa {
                     margin-right: 45px;
                 }
@@ -201,13 +204,19 @@ main .container {
 }
 
 .questions {
-    height: 1080px;
+    height: 910px;
+    .accordion {
+        margin-top: 42px;
+    }
     &__item {
         font-family: "Philosopher";
         font-size: 24px;
         line-height: 24px;
         font-weight: 700;
         color: #008daa;
+        i {
+            margin-right: 15px;
+        }
     }
     &__answer {
         font-family: Roboto;
@@ -218,20 +227,18 @@ main .container {
         color: #005c7d;
     }
     &__subheader {
-        margin-top: 60px;
+        margin-top: 29px;
         font-family: "Philosopher";
         font-size: 36px;
-        line-height: 36px;
         font-weight: 700;
         text-align: center;
         color: #008daa;
     }
     &__link {
         display: block;
-        margin-top: 46px;
+        margin-top: 29px;
         font-family: Philosopher;
         font-size: 36px;
-        line-height: 36px;
         font-weight: 700;
         text-decoration: underline;
         text-align: center;
@@ -257,7 +264,7 @@ main .container {
 
 .feedback {
     .carousel {
-        margin-top: 119px;
+        margin-top: 100px;
     }
     &__content {
         margin: 0 auto;
@@ -280,7 +287,7 @@ main .container {
         background-color: #ffffff;
     }
     &__subheader {
-        margin-top: 27px;
+        margin-top: 25px;
         margin-bottom: 337px;
         font-family: "Philosopher";
         font-size: 30px;
@@ -311,6 +318,14 @@ main .container {
   .carousel-control-next, .carousel-control-prev {
       align-items: flex-start;
       top: 62px;
+  }
+
+  .carousel-control-prev {
+      left: 19px;
+  }
+
+  .carousel-control-next {
+      right: 25px;
   }
 
   .carousel-control-prev-icon, .carousel-control-next-icon {
