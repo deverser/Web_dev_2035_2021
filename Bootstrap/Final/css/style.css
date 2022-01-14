@@ -345,10 +345,10 @@ main .container {
 }
 
 .contacts {
-  height: 1080px;
+  height: 772px;
 }
 .contacts__main {
-  margin-top: 177px;
+  margin-top: 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +362,7 @@ main .container {
 .contacts__img {
   display: block;
   width: 251px;
-  height: 85px;
+  height: 127px;
 }
 .contacts__text {
   font-family: Roboto;
@@ -384,7 +384,7 @@ main .container {
   color: #eb477c;
 }
 .contacts__subheader {
-  margin-top: 143px;
+  margin-top: 97px;
   font-family: Roboto;
   font-size: 30px;
   line-height: 36px;
@@ -400,12 +400,13 @@ main .container {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  margin-top: 63px;
+  margin-top: 38px;
   width: 570px;
 }
 .contacts__social a {
   display: block;
-  font-size: 60px;
+  margin-right: 25px;
+  font-size: 69px;
   color: #008DAA;
 }
 .contacts__social a:hover {

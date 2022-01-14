@@ -333,9 +333,9 @@ main .container {
   }
 
 .contacts {
-    height: 1080px;
+    height: 772px;
     &__main {
-        margin-top: 177px;
+        margin-top: 111px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -343,7 +343,7 @@ main .container {
     &__img {
         display: block;
         width: 251px;
-        height: 85px;
+        height: 127px;
     }
     &__text {
         font-family: Roboto;
@@ -365,7 +365,7 @@ main .container {
         }
     }
     &__subheader {
-        margin-top: 143px;
+        margin-top: 97px;
         font-family: Roboto;
         font-size: 30px;
         line-height: 36px;
@@ -377,11 +377,12 @@ main .container {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-        margin-top: 63px;
+        margin-top: 38px;
         width: 570px;
         a {
             display: block;
-            font-size: 60px;
+            margin-right: 25px;
+            font-size: 69px;
             color: #008DAA;
             &:hover {
                 color: #eb477b;
