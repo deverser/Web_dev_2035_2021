@@ -42,6 +42,10 @@ main .container {
     max-width: 1195px;
 }
 
+section {
+    height: 1035px;
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -130,7 +134,7 @@ main .container {
 }
 
 .header {
-    margin-top: 167px;
+    padding-top: 137px;
     font-family: "Philosopher";
     font-size: 60px;
     font-weight: 700;
