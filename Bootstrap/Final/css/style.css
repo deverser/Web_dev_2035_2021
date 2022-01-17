@@ -37,6 +37,10 @@
   height: 30px;
 }
 
+main {
+  background-color: #eeeeed;
+}
+
 main .container {
   max-width: 1195px;
 }
@@ -440,5 +444,3 @@ footer .content__link {
 footer .content__link:hover {
   color: #d4d0c8;
 }
-
-/*# sourceMappingURL=style.css.map */
