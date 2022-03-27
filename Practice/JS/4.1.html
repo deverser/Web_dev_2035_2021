@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1 Объекты и их свойства</title>
+    <script>
+        {
+            'use strict';
+
+            let workbook = new Object(); // Создаем объект. Сохраняем ссылку на него d в переменной.
+            workbook.title = 'Основы создания Web-узлов [JavaScript]'; // Устанавливаем свойство объекта.
+            workbook.chapter1 = new Object(); //Создаем объект. Обратите внимание – это вложенный объект.
+            workbook.chapter1.title = "Введение в Javascript"; // Устанавливаем свойство объекта.
+            workbook.chapter1.pages = 11; // Устанавливаем еще одно свойство объекта.
+            workbook.chapter2 = { title:'Переменные, операторы и выражения', pages: 6 }; //Другой способ установки свойств и значений объекта
+            // Выводим свойства объекта из объекта.
+            document.write("<h2>Курс: " + workbook.title + "</h2><br>" + 
+            "<h3>Тема 1. " + workbook.chapter1.title + ". Страниц: " + workbook.chapter1.pages + "</h3><br>" + "<h3>Тема 2. " + workbook.chapter2.title + ". Cтраниц: " + 
+                workbook.chapter2.pages + "</h3>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
