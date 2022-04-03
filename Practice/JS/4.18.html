@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4.18. Разделение текста с помощью метода split()</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            let DataString = 'Иван Иванов, Сергей Сидоров, Петя Петров, Аня Дружинина';
+            let NewArray = DataString.split(', ');
+            document.write(DataString);
+            document.write('<br>');
+            for(let i=0; i<NewArray.length; i++) {
+                document.write(NewArray[i]);
+                document.write('<br>');
+            }
+        }
+    </script>
+</body>
+</html>

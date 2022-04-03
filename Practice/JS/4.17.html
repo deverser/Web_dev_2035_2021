@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4.17. Извлечение информации из строки с помощью метода indexOf()</title>
+</head>
+<body onload="at()">
+    Имя: Иван <br>
+    Индекс буквы - <b id="index"></b><br>
+    Буква - <b id="character"></b>
+
+    <script>
+        {
+            "use strict";
+
+            function at() {
+                let FirstName = 'Иван';
+                let IndexValue = FirstName.indexOf('а');
+                document.getElementById('index').innerHTML = IndexValue;
+                if (IndexValue!== -1) {
+                    let Character = FirstName.charAt(IndexValue);
+                   // console.log(Character);
+                    
+                }
+                console.log(Character);
+                document.getElementById('character').innerHTML = Character;
+                
+            }
+        }
+    </script>
+</body>
+</html>
