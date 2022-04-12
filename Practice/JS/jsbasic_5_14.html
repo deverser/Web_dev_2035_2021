@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5.14. Использование функции для возвращения названия
+        месяца</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict";
+
+            month_name = (month_value) => {
+                switch (month_value) {
+                    case 0 : return "Январь"
+                    case 1 : return "Февраль"
+                    case 2 : return "Март"
+                    case 3 : return "Апрель"
+                    case 4 : return "Май"
+                    case 5 : return "Июнь"
+                    case 6 : return "Июль"
+                    case 7 : return "Август"
+                    case 8 : return "Сентябрь"
+                    case 9 : return "Октябрь"
+                    case 10 : return "Ноябрь"
+                    case 11 : return "Декабрь"
+                }
+            }
+            let date_now = new Date(2001, 7, 23);
+            let month_now = date_now.getMonth();
+            document.write("getMonth() возвращает " + month_now + "; месяц " + month_name(month_now));
+        }
+    </script>
+</body>
+</html>
