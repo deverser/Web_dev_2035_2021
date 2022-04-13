@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5.15. Использование массива для возврата названия дня
+        недели</title>
+</head>
+<body onload="sDate()">
+    <p>Текущая дата - <b id="Date"></b></p>
+    <script>
+        {
+            "use strict";
+
+            function sDate() {
+                let day_names = new Array(7);
+                day_names[0] = "Воскресенье";
+                day_names[1] = "Понедельник";
+                day_names[2] = "Вторник";
+                day_names[3] = "Среда";
+                day_names[4] = "Четверг";
+                day_names[5] = "Пятница";
+                day_names[6] = "Суббота";
+
+                let date_now = new Date(2001,7,23);
+                let day_now = date_now.getDay();
+                date = "getDay() возвращает " + day_now + "; день недели " + day_names[day_now];
+                document.getElementById("Date").innerHTML = date;
+            }
+        }
+    </script>
+</body>
+</html>
