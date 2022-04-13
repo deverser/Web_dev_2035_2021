@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5.17. Вычисление возраста в годах</title>
+</head>
+<body>
+    <b id="Date"></b><br>
+    Введите год рождения: <input type="text" id="year">
+    Введите месяц рождения (от 1 до 12): <input type="text" id="month">
+    Введите день рождения: <input type="text" id="day">
+    <input type="button" value="Рассчитать" onclick="sDate()">
+    <script>
+        {
+            "use strict";
+
+            sDate = ()=> {
+                let user_age,
+                    user_year = document.getElementById('year').value,
+                    user_month = document.getElementById('month').value,
+                    user_day = document.getElementById('day').value,
+                    birthday_date = new Date();
+                
+                birthday_date.setMonth(user_month - 1);
+                birthday_date.setDate(user_day);
+                let current_date = new Date(),
+                    current_year = current_date.getFullYear();
+
+                if (current_date < birthday_date) {user_age = current_year - user_year - 1;} else {
+                    user_age = current_year - user_year;
+                }
+                document.getElementById('Date').innerHTML = "Вам " + user_age + " лет.";
+            }
+        }
+    </script>
+</body>
+</html>
