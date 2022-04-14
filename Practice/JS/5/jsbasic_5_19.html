@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5.19. Функция округления числа до произвольного количества
+        знаков после запятой</title>
+</head>
+<body>
+    <input type="button" value="Рассчитать" onclick="round_decimals(2, 1.1)">
+    <script>
+        {
+            "use strict";
+
+            round_decimals = (original_number, decimals)=> {
+                let result1 = original_number * Math.pow(10, decimals);
+                alert(result1);
+                let result2 = Math.round(result1);
+                alert(result2);
+            }
+        }
+    </script>
+</body>
+</html>
